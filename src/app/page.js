@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const getData = async () => {
-  const fetchData = await fetch(`http://localhost:3000/api/users`);
+  const fetchData = await fetch(`/api/users`);
   const res = await fetchData.json();
   return res;
 };
